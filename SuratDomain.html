@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link rel="icon" type="png" href="logobanyumas - Copy.png" />
+    <title>SuratDesa.com</title>
+  </head>
+
+  <body>
+    <!-- Navbar (start) -->
+    <nav class="navbar" id="navbar">
+      <div class="left-items">
+        <div class="navbar-extra">
+          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+
+        <div class="banyumas">
+          <img src="logobanyumas - Copy.png" alt="Logo Banyumas" />
+        </div>
+        <a href="#" class="navbar-logo">SuratDesa.com</a>
+      </div>
+      <div class="profile">
+        <img src="profile.png" alt="Profile Picture" />
+        <span>Username</span>
+      </div>
+
+      <div class="navbar-nav">
+        <a href="SuratDomain.html" id="permohonan-domain"
+          >Permohonan Penggunaan Domain</a
+        >
+        <a href="SuratKuasa.html" id="pemberian-kuasa"
+          >Pemberian Kuasa Mengelola Domain</a
+        >
+        <a href="SuratGantiAdmin.html" id="permohonan-admin"
+          >Permohonan Pergantian Admin</a
+        >
+        <a href="SuratTugas.html" id="perintah-tugas">Perintah Tugas</a>
+      </div>
+    </nav>
+    <!-- Container Surat (start) -->
+    <div class="container">
+      <form action="#">
+        <!-- Surat Domain (start) -->
+        <header>Surat Permohonan Penggunaan Domain</header>
+        <div class="form first">
+          <div class="fields">
+            <div class="input-field">
+              <label>Nomor Surat :</label>
+              <input
+                type="text"
+                required
+                maxlength="50"
+                placeholder="xxx/xxx/xxx"
+              />
+            </div>
+            <div class="input-field">
+              <label>Jumlah Lampiran :</label>
+              <select required id="angkaSelect"></select>
+            </div>
+
+            <div class="input-field">
+              <label>Nama Desa :</label>
+              <input
+                type="text"
+                id="desaInput"
+                maxlength="20"
+                placeholder="misal : Kembaran"
+                required
+              />
+            </div>
+
+            <div class="input-field">
+              <label>Tanggal :</label>
+              <input
+                type="text"
+                id="tanggalInput"
+                placeholder="misal : 31"
+                maxlength="2"
+                required
+              />
+            </div>
+
+            <div class="input-field">
+              <label>Bulan :</label>
+              <select required>
+                <option value="">Pilih Bulan</option>
+                <option value="1">Januari</option>
+                <option value="2">Februari</option>
+                <option value="3">Maret</option>
+                <option value="4">April</option>
+                <option value="5">Mei</option>
+                <option value="6">Juni</option>
+                <option value="7">Juli</option>
+                <option value="8">Agustus</option>
+                <option value="9">September</option>
+                <option value="10">Oktober</option>
+                <option value="11">November</option>
+                <option value="12">Desember</option>
+              </select>
+            </div>
+
+            <div class="input-field">
+              <label>Tahun :</label>
+              <input
+                type="text"
+                id="tahunInput"
+                maxlength="4"
+                placeholder="misal : 2021"
+                required
+              />
+            </div>
+
+            <div class="input-field">
+              <label>Nama Pengurus Website :</label>
+              <input
+                type="text"
+                id="namaInput"
+                required
+                maxlength="50"
+                placeholder="Nama Lengkap"
+              />
+            </div>
+
+            <div class="input-field">
+              <label>Telp HP/WA :</label>
+              <input
+                type="text"
+                maxlength="20"
+                required
+                placeholder="0812xxxx"
+                oninput="restrictToNumbers(this)"
+              />
+            </div>
+
+            <div class="input-field">
+              <label>Nama Kepala Desa :</label>
+              <input
+                type="text"
+                id="kadesInput"
+                required
+                maxlength="50"
+                placeholder="Nama Lengkap"
+              />
+            </div>
+          </div>
+
+          <button class="submitBtn">
+            <span class="btnText">Generate</span>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
