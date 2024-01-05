@@ -1,2 +1,2 @@
 # Website Generate Surat Otomatis
-Koding untuk website surat desa untuk kegiatan kerja praktik
+Projek Kerja Praktik di Dinas Kominfo Kabupaten Banyumas
